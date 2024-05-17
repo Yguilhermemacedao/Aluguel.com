@@ -1,0 +1,132 @@
+:root{
+    /* Cores */
+    --laranja:#E45E2D;
+    --laranja-claro:#FFE5CF;
+    --preto:#292624;
+    --branco:#ffffff;
+
+    /* Fonte */
+    --fonte-principal:'Poppins';
+}
+
+body{
+    font-family: var(--fonte-principal);
+    background-color: var(--branco);
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+header{
+    height: 10vh;
+    width: 100%;
+    padding: 10px;
+    width: 100%;
+    background-color: var(--branco);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between ;
+}
+
+header .logo{
+    height: 100px;
+    width: 100px;
+    background: url(./../img/icon-page.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header nav{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 50vw;
+    padding: 10px;
+    background-color: var(--laranja-claro)
+}
+
+header nav ul{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;    
+}
+
+header nav #toggleChecker{
+   
+}
+
+.checkboxtoggler {
+    width: 3em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7em;
+    cursor: pointer;
+  }
+  
+  .line-1 {
+    background: #df6447;
+    height: 0.3em;
+    border-radius: 10em;
+    transition-duration: 500ms;
+  }
+  
+  .line-2 {
+    background: #df6447;
+    height: 0.3em;
+    border-radius: 10em;
+    transition-duration: 500ms;
+  }
+  
+  .line-3 {
+    background: #df6447;
+    height: 0.3em;
+    border-radius: 10em;
+    transition-duration: 500ms;
+  }
+  
+  #togglerLable{
+    float: right;
+    margin-bottom: 3rem;
+  }
+
+  #toggleChecker {
+    height: 3em;
+    width: 100%;
+    display: none;
+    
+  }
+  
+  #toggleChecker:checked + #togglerLable .checkboxtoggler .line-1 {
+    -webkit-transform: rotate(45deg) translateY(0.7em) translateX(0.7em);
+    -ms-transform: rotate(45deg) translateY(0.7em) translateX(0.7em);
+    transform: rotate(45deg) translateY(0.7em) translateX(0.7em);
+  }
+  
+  #toggleChecker:checked + #togglerLable .checkboxtoggler .line-2 {
+    -webkit-transform: rotate(-45deg) translateY(0em) translateX(0.1em);
+    -ms-transform: rotate(-45deg) translateY(0em) translateX(0.1em);
+    transform: rotate(-45deg) translateY(0em) translateX(0.1em);
+  }
+  
+  #toggleChecker:checked + #togglerLable .checkboxtoggler .line-3 {
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+
+header nav ul a{
+    font-size: 20px;
+    color: #292624;
+    transition: all .5s ease;
+}
+
+header nav ul a:hover{
+
+}
+
+main section#home{
+    height: 100vh;
+}
+
